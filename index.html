@@ -61,16 +61,8 @@
                     <h1>{{titulo}}</h1>
                     <h3>Hacé tu pedido online y estará listo !</h3>
                     <ul id="pasos">
-                        <li>
-                            <img src="imagenes/icon-gps.png" alt="">
-                            <p><b>1. Desde el barrio hospital</b><br> el mejor delivery!</p>
-                        </li>
-                        <li>
-                            <img src="imagenes/icon-list.png" alt="">
-                            <p><b>2. Hacé tu pedido</b><br>Aboná online o en nuestro local</p>
-                        <li>
-                            <img src="imagenes/icon-restaurant2.png" alt="">
-                            <p><b>3. Acercate a disfrutar</b><br>Comida al instante de llegar</p>
+                        <li v-for="paso in pasos">
+                            <p v-html="paso.titulo"></p>
                         </li>
                     </ul>
                     <form action="" method="post">
