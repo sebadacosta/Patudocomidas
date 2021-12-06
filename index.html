@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>patudo comidas</title>
+        <link rel=stylesheet href="food.css">
+        <link rel="icon" type="image/png" href="imagenes/logo-ffcolor2.png" />
+        <style>
+            @import url('cps://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
+        </style>
+        <style>
+                @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i');
+                </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo"><a href="index.html"><img src="imagenes/logo-ffcolor.png" alt=""></a></div>
+                <div class="usuario">
+                        <ul>
+                            <li id="button">REGISTRARSE</li>
+                            <li id="button1">INICIAR SESIÓN</li>
+                        </ul>
+                        <div id="miModal" class="modal">
+                            <div class="modal-contenido">
+                                <span id="cerrar"><img src="imagenes/close.png" alt=""></span>
+                                <form id="form-usuario" action="" method="post">
+                                    <h4>REGISTRATE</h4>
+                                    <p>¿Ya tenés una cuenta? <a id="link" style="color:dodgerblue">Iniciar sesión</a></p>
+                                    <input type="text" placeholder="Nombre y Apellido" name="name" required>
+                                    <input type="text" placeholder="E-mail" name="email" required>
+                                    <input type="text" placeholder="Número de teléfono" name="telephone" required>
+                                    <input type="password" placeholder="Crear contraseña" name="psw" required>
+                                    <input type="password" placeholder="Repetir contraseña" name="psw-repeat" required>
+                                    <input type="submit" name="signup_submit" value="Registrarme" />
+                                <p>Al registrarte, aceptás los <br> <a href="#" style="color:dodgerblue">Términos y condiciones</a>.</p>
+                                </form>
+                            </div>
+                          </div>
+                        <div id="miModal1" class="modal">
+                            <div class="modal-contenido">
+                                <span id="cerrar1"><img src="imagenes/close.png" alt=""></span>
+                                <form id="form-usuario" action="" method="post">   
+                                    <h4>INICIÁ SESIÓN</h4>
+                                    <p>¿Todavía no tenés una cuenta? <a id="link1" style="color:dodgerblue">Registrarse</a></p>
+                                    <input type="text" placeholder="Email" name="email" required>
+                                    <input type="password" placeholder="Contraseña" name="psw" required>
+                                    <input type="submit" name="signin_submit" value="Iniciar sesión" />
+                                    <p><a href="#" style="color:dodgerblue">¿Olvidaste tu contraseña?</a></p>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </header>
+            <section>
+                <div class="busqueda">
+                    <h1>COCINA CASERA</h1>
+                    <h3>Hacé tu pedido online y estará listo !</h3>
+                    <ul id="pasos">
+                        <li>
+                            <img src="imagenes/icon-gps.png" alt="">
+                            <p><b>1. Desde el barrio hospital</b><br> el mejor delivery!</p>
+                        </li>
+                        <li>
+                            <img src="imagenes/icon-list.png" alt="">
+                            <p><b>2. Hacé tu pedido</b><br>Aboná online o en nuestro local</p>
+                        <li>
+                            <img src="imagenes/icon-restaurant2.png" alt="">
+                            <p><b>3. Acercate a disfrutar</b><br>Comida al instante de llegar</p>
+                        </li>
+                    </ul>
+                    <form action="" method="post">
+                        <input type="text" placeholder="Escribe tu dirección">
+                        <select name="ciudad">
+                        <option selected value="0"> Elige un barrio </option>
+                        <option value="1">hospital</option> 
+                        <option value="2">afe</option> 
+                        <option value="3">zorrilla</option> 
+                        <option value="4">bypass</option> 
+                        <option value="5">cerro</option> 
+                        <option value="6">las flores</option> 
+                        <option value="7">independencia</option> 
+                        <option value="8">rampla</option> 
+                        <option value="9">centenario</option> 
+                        <option value="10">centro</option> 
+                        <option value="11">villa lola</option> 
+                        <option value="12">25 de agosto</option> 
+                        <option value="13">olimpico</option> 
+                        <option value="14">matadero</option> 
+                        </select>
+                        <input type="submit" value="BUSCAR">
+                    </form>
+                   
+                </div>
+            </section>
+            <section>
+                    <h2>PLATOS RECOMENDADOS</h2>
+                <ul id="platos-recomendados">
+                    <li>
+                        <img src="imagenes/mostaza-combo1.png" alt="">
+                        <div class="nombre-plato">COMBO 1</div>
+                        <p>Cheddar simple junior. Hamburguesas en serio, grandes, ricas y rapidísimas</p>
+                        <div class="espera">30 min</div>
+                    </li>
+                    <li>
+                        <img  src="imagenes/mostaza-plato1.jpg" alt="">
+                        <div class="nombre-plato">PLATO 1</div>
+                        <p>Ensalada de pollo grill.<br>Exquisita, fresca y crujiente, perfecta para el verano</p>
+                        <div class="espera">30 min</div>
+                    </li>
+                    <li>
+                        <img src="imagenes/mostaza-postre1.jpg" alt="">
+                        <div class="nombre-plato">POSTRE 1</div>
+                        <p>Sundae de vainilla o chocolate.<br>Un clásico, pero con las más ricas y variadas salsas</p>
+                        <div class="espera">10 min</div>
+                    </li>
+                    <li>
+                        <img src="imagenes/sandwich.jpg" alt="">
+                        <div class="nombre-plato">PLATO 2</div>
+                        <p>Ese sanguchito armado a tu estilo con infinidad de posibilidades y sabores</p>
+                        <div class="espera">20 min</div>
+                    </li>
+                </ul>
+                <aside>
+                    <div class="publicidad"> <img width=100% src="imagenes/mostaza-publi1.png" alt=""></div>
+                </aside>
+            </section>
+            <footer>
+                <div class="contacto"> 
+                    <ul>
+                        <li><a href="quienes/quienes-somos.html">QUIENES SOMOS</a></li>
+                        <li><a href="">CONTACTO</a></li>
+                    </ul>
+                </div>
+                <div class="redes">
+                    <a href="" class="icon-redes"><img src="imagenes/redes-instagram.png" alt=""></a>
+   					<a href="" class="icon-redes"><img src="imagenes/redes-facebook.png" alt=""></a>
+   					<a href="" class="icon-redes"><img src="imagenes/redes-twitter.png" alt=""></a>
+                </div>
+                <div class="footer-text"><p>@2021 SEBADACOSTA, <i>PATUDO COMIDAS.</i> </p></div>
+            </footer>
+        </div>
+        <script src="javascript/jsmodal.js"></script>
+    </body>
+</html>

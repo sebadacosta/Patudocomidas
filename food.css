@@ -1,0 +1,789 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+body{
+    background-color:#1C1C1C;
+    font-family: 'Fira Sans', sans-serif;
+}
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+h1{
+    font-size: 700%;
+    margin-bottom: 0;
+    margin-top: 3;
+    font-weight: 800;
+    color: orangered
+}
+h3{
+    font-size:230%;
+    font-style: italic;
+    
+    margin-top: 10pt;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+h2 {
+    color: white;
+    font-size: 30pt;
+    font-weight: 600;
+    text-align: center; 
+    margin: 30px;
+    padding: 20px 0 0 0;
+}
+h4 {
+    color: orangered;
+    font-size:35pt;
+    font-weight: 800;
+    margin-top: 30px;
+}
+header { 
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+    align-items: center;
+    background: orange;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13pt;
+}
+    .logo {
+        padding: 20px;
+        flex: 1 1 auto;
+    }
+        .logo img{
+            width: 100px;
+        
+        }
+    .usuario ul{
+        display: flex;
+        flex-flow: row wrap;
+        flex: 3 1 auto;
+        text-transform: uppercase;
+        font-weight: 400;
+        
+    }
+    
+        .usuario li{
+            list-style-type: none;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            padding: 10px 20px;
+            color: #FFF;
+            background-color: #16a085;
+            border: none;
+            border-radius: 2px;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;           
+            transition: 0.1s ease;
+        }           
+            .usuario li:hover,
+            .usuario li:focus {
+                opacity: 1;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+                transition: 0.1s ease;
+            }
+                .usuario li:active {
+                  opacity: 1;
+                  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+                  transition: 0.1s ease;
+                }
+footer {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    background: orange;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+    
+}
+    .contacto ul{
+        list-style: none;
+        flex: 1 1 auto;
+        
+    }
+        .contacto li {
+            display: inline-flex;
+            font-size: 12pt;
+            margin-right: 30px;
+            
+            
+        }
+        .contacto li a {
+            text-decoration: none;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 600;
+            color: #1C1C1C;
+        }
+
+    .footer-text {
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: row-reverse;
+        font-size: 100%;
+        color: #1C1C1C;
+        font-weight: 600;
+        
+
+    }
+    .redes {
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: row-reverse;
+    }
+        .icon-redes img{ 
+            width: 30px;
+            margin: 10px 10px;
+        }
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+}
+/*estilo de la section busqueda*/
+.busqueda {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 60px 0 40px 0;
+}
+form {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    padding: 50px 0 0 0;
+}
+    form input, select{
+    width: 190px;
+    font-family: 'Roboto', sans-serif;
+    }
+
+#pasos {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    flex: 1 1 20%;
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+    align-items: center;
+    
+}
+#pasos ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#pasos li {
+    display: inline-flex;
+    flex: 1 1 70%;
+    list-style: none;
+    font-size: 90%;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+#pasos li img {
+    width: 15%;
+    height: 15%;
+}
+
+#pasos li p {
+    margin-left: 15px;
+}
+
+/*estilo de la section restaurantes mas elegidos*/
+#platos-recomendados{
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    padding: 30px;
+    justify-content: center;
+}
+
+#platos-recomendados li{
+    display: inline-block;
+    margin: 0 20px 20px 20px;
+    width:250px;
+    padding: 10px;
+    color: #666;
+    background-color: white;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.8);
+}
+    #platos-recomendados li img{
+    width: 230px;
+    height: 230px;
+    }
+.nombre-plato{
+    font-weight: 700;
+    font-size: 30pt;
+    color: orangered;
+    margin: 5px;
+}
+.espera {
+    font-weight: 700;
+    font-size: 18pt;
+    color: orange;
+    margin: 10px 5px 20px 5px;
+    
+}
+
+/*FALTA PONER EL ESTILO DEL ASIDE, CLASS PUBLICIDAD*/
+
+/*sign up form modal, rosini*/
+.modal {
+    display: none; /* oculta el modal de manera predeterminada */
+    position: fixed; /* lo mantiene en su lugar */
+    z-index: 1; /* lo posiciona una capa mas arriba */
+    left: 0;
+    top: 0;
+    width: 100%; /* ocupa todo el ancho */
+    height: 100%; /* ocupa todo el alto */
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Contenido del modal o la caja como tal */
+.modal-contenido {
+    margin: 4% auto; /* 15% desde arriba y el centro */
+    padding: 20px;
+    width: 40%; /* puede ser menos o mas dependiendo del tamaño que le quieran dar a la caja modal */
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+
+/* La X para cerrar el modal */
+#cerrar img{
+    width: 30px;
+    float: right;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+
+#cerrar img:hover, #cerrar:focus {
+    /*color: black;
+    text-decoration: none;
+    cursor: pointer;*/
+    border-radius: 6px;
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+}
+#cerrar img:active  {
+        opacity: 1;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        transition: 0.1s ease;
+        border-radius: 6px;
+    }
+
+/* La X para cerrar el modal1 */
+#cerrar1 img{
+    width: 30px;
+    float: right;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+
+#cerrar1 img:hover, #cerrar:focus {
+    /*color: black;
+    text-decoration: none;
+    cursor: pointer;*/
+    border-radius: 6px;
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+}
+#cerrar1 img:active  {
+        opacity: 1;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+        transition: 0.1s ease;
+        border-radius: 6px;
+    }
+
+
+
+
+
+/*estilo del sign up, sing in, form*/
+#form-usuario {
+    position: relative;
+    margin:4% auto;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 400px;
+    border-radius: 2px;
+    padding: 10px 10px 30px 10px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4)
+}
+#form-usuario p {
+    margin: 0 0 15px 0;
+    font-size: 11pt;
+    line-height: 15pt;
+    text-align: center;
+}
+#form-usuario input[type="text"], input[type="password"] {
+    display: block;
+    margin-top: 8pt;
+    text-align: left;
+    font-size: 11pt;
+    width: 220px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #AAA;
+    padding: 4px;
+    transition: 0.2s ease;
+}
+#form-usuario input[type="text"]:focus, input[type="password"]:focus {
+      border-bottom: 2px solid #16a085;
+      color: #16a085;
+      transition: 0.2s ease;
+}
+#form-usuario input[type="submit"] {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #16a085;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13pt;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+  
+  input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+
+#link, #link1 {
+    cursor: pointer;
+}
+
+/*estilo de busqueda locales*/
+#resultados {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+#restaurantes {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 500px;
+    margin: 20px;
+}
+h5 {
+    font-size: 15pt;
+    color: whitesmoke;
+    margin: -20px -20px 30px -20px;
+    background-color: orangered;
+    padding: 20px;
+}
+    .filtros {
+        padding: 20px;
+        background-color: whitesmoke;
+        border-radius: 2px;
+        box-sizing: border-box;
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.8);
+    }
+    .filtros div + div {
+        margin-top: 15pt;
+    }
+    .restaurante {
+        padding: 20px;
+        border: 1px solid black;
+        background-color: whitesmoke;
+        width: 1200px;
+        margin: 0 0 0 20px;
+        border-radius: 2px;
+        box-sizing: border-box;
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.8);
+        
+    }
+/*estilo para menu del restaurante*/
+#restauranteElegido {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    background-color: whitesmoke;
+    padding: 20px;
+    
+}
+.info-texto {
+    background-color: whitesmoke;
+    color: white;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    flex: 1 1 30%;
+    align-items: baseline;
+    padding: 20px 20px 10px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: orangered;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 2px; 
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
+}
+.nombre-sucursal{
+    font-size: 200%;
+    font-weight: 700;
+    width: 40%;
+    flex: 1 1 auto;
+}
+#restauranteElegido .espera{
+    font-size: 100%;
+    font-weight: 700;
+    flex: 1 1 auto;
+    width: 20%;
+    color: white;
+    
+}
+.direccion {
+    flex: 1 1 auto;
+    font-size:140%;
+    width: 40%;
+}
+
+.info-mapa iframe{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 270px;
+    flex: 1 1 auto;
+    margin-left: 20px;
+}
+
+#promos {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    background-color: white;
+    border-radius: 2px; 
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
+    /*width: 400px;*/
+    margin-left: 60px;
+    margin-right: 20px;
+    
+}
+
+#promos ul {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 20%;
+    
+}
+#promos ul li{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 20%;
+    margin: 20px;
+    color: #666;
+    text-decoration: none;
+}
+#platopop {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 20%;
+    text-align: center;
+    align-items: center;
+}
+#platopop img {
+    flex: 1 1 auto;
+    width: 160px;
+    height: 160px;
+}
+#platopop .plato {
+    flex: 1 1 auto;
+    font-size: 15pt;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#platopop p {
+    flex: 1 1 auto;
+    font-size: 90%;
+}
+#platopop p.condicion {
+    color: orangered;
+    font-weight: 600;
+    line-height: 200%;
+    font-size: 150%;
+}
+h6 {
+    font-size: 15pt;
+    color: white;
+    background-color: orangered;
+    padding: 10px 10px 10px 20px;
+    border-top-left-radius: 2px; 
+    border-top-right-radius: 2px; 
+}
+
+
+/*menu desplegable*/
+
+#carousel {
+    border:solid 1px rgba(0, 0, 0, 0.3);
+    border-radius:2px;
+    box-shadow:0 0 0 4px rgba(125,125,125,0.1);
+    margin:40px 30px;
+    overflow:hidden;
+    padding:0;
+    position:relative;
+    width:auto;
+    
+}
+
+/* navigation items */
+#carousel .navigation {
+    background:rgba(0,0,0,0.5);
+    color:rgba(255, 255, 255, 0.884);
+    display:block;
+    font-size:3em;
+    height:280px;
+    padding-top:100px;
+    position:absolute;
+    text-align:center;
+    text-shadow:rgba(0,0,0,0.1) 0 0 2px;
+    width: 75px;
+    -moz-transition:all 0.4s;
+    -ms-transition:all 0.4s;
+    -webkit-transition:all 0.4s;
+    -o-transition:all 0.4s;
+    transition:all 0.4s;
+    text-decoration: none;
+}
+
+#carousel:hover .navigation {
+    background:rgba(0,0,0,0.3);
+    color:rgba(255,255,255,0.8);
+    text-shadow:rgba(0,0,0,0.7) 0 0 2px;
+}
+
+#carousel .navigation:hover {
+    background:rgba(0,0,0,0.5);
+}
+
+#carousel .previous {
+    left:0;
+}
+
+#carousel .next {
+    right:0;
+}
+
+/* carousel container */
+#menu {
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+#carousel ul {
+    -moz-box-orient:horizontal;
+    -ms-box-orient:horizontal;
+    -webkit-box-orient:horizontal;
+    -o-box-orient:horizontal;
+    box-orient:horizontal;
+    display:-moz-box;
+    display:-ms-box;
+    display:-webkit-box;
+    display:-o-box;
+    display:box;
+    list-style-type:none;
+    margin:5px;
+    margin-left:-200px;
+    padding:0;
+    
+}
+
+/* standard width and height for the carousel items */
+#carousel li {
+    height:275px;
+    width:275px;
+    margin-right:10px;
+    
+}
+#carousel li img{
+    height:275px;
+    width:275px;
+}
+
+
+/*aca borr 
+#carousel figure {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+}
+#carousel figcaption {
+    position: absolute;
+    transition: all 0.3s;
+    left: 0px;
+    bottom: -275px;
+    width: 100%;
+    padding: 5%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+#carousel figure:hover figcaption {
+    bottom: 0px;
+}
+hasta aca*/
+
+
+
+/* animation properties for the carousel */
+.animate ul {
+    -moz-transition: margin 0.5s;
+    -ms-transition: margin 0.5s;
+    -webkit-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+    transition: margin 0.5s;
+}
+
+/* different color for each of our items */
+#carousel li:nth-child(1) {
+    background:#6699ff;
+}
+
+#carousel li:nth-child(2) {
+    background:#eb66ff;
+}
+
+#carousel li:nth-child(3) {
+    background:#6bfb64;
+}
+
+#carousel li:nth-child(4) {
+    background:#fbb264;
+}
+
+#carousel li:nth-child(5) {
+    background:#f691e2;
+}
+
+#carousel li:nth-child(6) {
+    background:#fbf264;
+}
+
+#carousel li:nth-child(7) {
+    background:#66d9ff;
+}
+
+#carousel li:nth-child(8) {
+    background:#68ce54;
+}
+
+#carousel li:nth-child(9) {
+    background:#fb6b64;
+}
+#carousel li:nth-child(10) {
+    background:#fb6b64;
+}
+#carousel li:nth-child(11) {
+    background:#fb6b64;
+}
+#carousel li:nth-child(12) {
+    background:#fb6b64;
+}
+#carousel li:nth-child(13) {
+    background:#fb6b64;
+}
+#carousel li:nth-child(14) {
+    background:#fb6b64;
+}
+#carousel li:nth-child(15) {
+    background:#fb6b64;
+}
+#carousel li:nth-child(16) {
+    background:#fb6b64;
+}
+
+/*quienes somos*/
+#quienes {
+    display: flex;
+    flex-flow:row wrap;
+    flex: 1 1 auto;
+    background-color: whitesmoke;
+    align-items: center;
+    
+}
+    .info-historia {
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+        padding: 10px 40px;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        line-height: 140%;
+
+    }
+    .titulo{
+        display: flex;
+        font-size: 250%;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: orangered;
+    }
+    .subt {
+        display: inline-flex;
+        font-size: 120%;
+        font-weight: 600;
+        margin-bottom: 20px;
+        
+    }
+    .info-imagen img{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .biglogo img{
+        
+        width: 90%;
+        height: 90%;
+    }
+
+s
