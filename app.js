@@ -2,6 +2,10 @@ const app = new Vue({
     el: '#app',
     data: {
         titulo: 'COCINA CASERA',
+
+        subtitulo: "Hacé tu pedido online y estará listo!",
+
+        
         pasos: [
             {
                 titulo: `<b>1. Desde el barrio hospital</b><br> el mejor delivery!`
