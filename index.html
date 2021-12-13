@@ -67,7 +67,7 @@
                         </li>
                     </ul>
                     <form action="" method="post">
-                        <input type="text" placeholder="Escribe tu dirección">
+                        <input type="text" placeholder="Escribe tu dirección" v-model="buscador.direccion">
                         <select name="ciudad">
                         <option selected value="0"> Elige un barrio </option>
                         <option value="1">hospital</option> 
@@ -85,37 +85,23 @@
                         <option value="13">olimpico</option> 
                         <option value="14">matadero</option> 
                         </select>
-                        <input type="submit" value="BUSCAR">
+                        <input type="button" value="BUSCAR" v-on:click="buscarDireccion()">
                     </form>
-                   
+                   <div>
+                       <p v-if="resultado.delivery > 0" style="margin-top: 1rem;">
+                           Desde tu direccion: {{buscador.direccion}} el delivery cuesta $ {{resultado.delivery}}
+                       </p>
+                   </div>
                 </div>
             </section>
             <section>
                     <h2>PLATOS RECOMENDADOS</h2>
                 <ul id="platos-recomendados">
-                    <li>
-                        <img src="imagenes/mostaza-combo1.png" alt="">
-                        <div class="nombre-plato">COMBO 1</div>
-                        <p>Cheddar simple junior. Hamburguesas en serio, grandes, ricas y rapidísimas</p>
-                        <div class="espera">30 min</div>
-                    </li>
-                    <li>
-                        <img  src="imagenes/mostaza-plato1.jpg" alt="">
-                        <div class="nombre-plato">PLATO 1</div>
-                        <p>Ensalada de pollo grill.<br>Exquisita, fresca y crujiente, perfecta para el verano</p>
-                        <div class="espera">30 min</div>
-                    </li>
-                    <li>
-                        <img src="imagenes/mostaza-postre1.jpg" alt="">
-                        <div class="nombre-plato">POSTRE 1</div>
-                        <p>Sundae de vainilla o chocolate.<br>Un clásico, pero con las más ricas y variadas salsas</p>
-                        <div class="espera">10 min</div>
-                    </li>
-                    <li>
-                        <img src="imagenes/sandwich.jpg" alt="">
-                        <div class="nombre-plato">PLATO 2</div>
-                        <p>Ese sanguchito armado a tu estilo con infinidad de posibilidades y sabores</p>
-                        <div class="espera">20 min</div>
+                    <li v-for="item in platos">
+                        <img v-bind:src="item.imagen" alt="">
+                        <div class="nombre-plato">{{item.nombre}}</div>
+                        <p>{{item.descripcion}}</p>
+                        <div class="espera">{{item.tiempo}} {{item.medida}}</div>
                     </li>
                 </ul>
                 <aside>
